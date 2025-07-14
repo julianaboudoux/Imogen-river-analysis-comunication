@@ -29,8 +29,13 @@ As coneções entre as placas estão descritas na tabela abaixo:
 
 #### Passo a passo para garantir funcionamento correto do projeto:
 Passo 0: Ao configurar o servidor da REST API, altere o código da ESP32 para refletir o endereço correto da API.
+
 Passo 1: Rode o código da ESP32, para que ela fique em estado de espera de recebmento de dados.
+
 Passo 2: Siga o passo a passo do Serial Monitor da ESP32 para conecta-la em uma rede wifi com acesso a internet.
-Passo 3: Rode o código da STM.                                                                                                                                                                                              
-Passo 4: Observe se os dados estão chegando corretamente na ESP32.                                                                                                                                            
+
+Passo 3: Rode o código da STM.
+
+Passo 4: Observe se os dados estão chegando corretamente na ESP32.
+
 Passo 5: Observe se os dados estão chegando corretamente no servidor.
