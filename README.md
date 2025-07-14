@@ -6,7 +6,7 @@ O projeto implementa uma comunicação SPI entre uma placa STM (atuando como Mas
 
 ## 1. Placas e configurações utilizadas
 
-Foram utilizadas uma placa STM Nucleo H753ZI e uma ESP32 de 38 pinos.
+Foram utilizadas uma placa STM Nucleo H753ZI e uma ESP32 DEVKIT V1 de 38 pinos.
 
 * A pasta SPI_do_zero contém tanto o código quanto a configuração do projeto para a STM.
 * O arquivo SKECTHCFUNCIDOSNASDO.ino contém tanto o código quanto a configuração do projeto para a ESP32.
@@ -27,8 +27,10 @@ As coneções entre as placas estão descritas na tabela abaixo:
 * Placas conectadas.
 * Servidor pronto para receber as requisições.
 
-#### Passo a pass para garantir funcionamento correto do projeto:
-Passo 1: Rode o código da ESP32, para que ela fique em estado de espera de recebmento de dados.                                                                                                                     
-Passo 2: Rode o código da STM.                                                                                                                                                                                              
-Passo 3: Observe se os dados estão chegando corretamente na ESP32.                                                                                                                                            
-Passo 4: Observe se os dados estão chegando corretamente no servidor.
+#### Passo a passo para garantir funcionamento correto do projeto:
+Passo 0: Ao configurar o servidor da REST API, altere o código da ESP32 para refletir o endereço correto da API.
+Passo 1: Rode o código da ESP32, para que ela fique em estado de espera de recebmento de dados.
+Passo 2: Siga o passo a passo do Serial Monitor da ESP32 para conecta-la em uma rede wifi com acesso a internet.
+Passo 3: Rode o código da STM.                                                                                                                                                                                              
+Passo 4: Observe se os dados estão chegando corretamente na ESP32.                                                                                                                                            
+Passo 5: Observe se os dados estão chegando corretamente no servidor.
